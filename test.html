@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Functions</h1>
+
+    <p>Call a function which performs a calculation and returns the result:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      let text = "";
+      function myFunction() {
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+          text = "Phone";
+        } else if (/Tablet|iPad/i.test(navigator.userAgent)) {
+          text = "Tablet";
+        } else {
+          text = "PC";
+        }
+        return text;
+      }
+
+      let result = myFunction();
+      document.getElementById("demo").innerHTML = result;
+    </script>
+  </body>
+</html>
